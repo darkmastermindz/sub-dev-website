@@ -1,0 +1,9 @@
+{
+  "name": "Darkus-Rising-Web",
+  "version": "1.0.0",
+  "description": "Website to showcase Darkus Rising",
+  "main": "index.js",
+  "repository": "https://github.com/darkmastermindz/sub-dev-website",
+  "author": "Hansel Wei",
+  "license": "MIT"
+}
