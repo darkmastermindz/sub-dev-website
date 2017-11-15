@@ -1,143 +1,177 @@
 body {
-	font: 100%/1.4 "Copperplate Gothic Light", Arial Narrow, New York, Gill Sans;
-
-	background-color: #0098FF;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	text-align: justify;
+  font: 100%/1.4 "Copperplate Gothic Light", Arial Narrow, New York, Gill Sans;
+  background-color: #002B36;
+  margin: 5px;
+  padding: 5%;
+  color: #FFF;
+  text-align: justify;
 }
 
-ul, ol, dl {
-	padding: 0;
-	margin: 0;
+/* sidebar stuff */
+
+#sidebar {
+  background: #ffffff;
+  background-image: url("../images/sidebarback.jpg");
+  background-size: cover;
+  width: 210px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: -200px;
+  top: 0px;
+  transition: left 0.3s linear;
+  color: ffffff;
+  border-radius: 15px;
+}
+
+#sidebar.visible {
+  left: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #DC322F;
+  transition: left 0.3s linear;
 }
 
 ul {
-	list-style-image:url(images/bullettheif.png);
-}
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;
-	padding-right: 15px;
-	padding-left: 15px;
-	text-align: center;
-}
-p {
-	font: 80%/1.0 "Courier New", Courier, monospace
-}
-a img {
-	border: none;
-	text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  background: #268BD2;
+  color: #ffffff;
+  border-top: 4px solid #073642;
+  border-radius: 8px;
+  display: block;
+  width: 180px;
+  padding: 10px;
+  text-decoration-style: wavy;
+}
+
+#sidebar-btn {
+  color: #ffffff;
+  border-width: thick;
+  background-color: #ffffff;
+  padding: 5%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  top: 0px;
+  right: -60px;
+  box-shadow: 10px;
+}
+
+#sidebar-btn span {
+  color: #ffffff;
+  height: 1px;
+  background: #111;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#sidebar-btn span:nth-child(2) {
+  color: #ffffff;
+  width: 75%;
+}
+
+#sidebar-btn span:nth-child(3) {
+  color: #ffffff;
+  width: 50%;
+}
+
+ul, ol, dl {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-image: url(../images/bullettheif.png);
+}
+
+a img {
+  border: none;
+  text-align: center;
+}
 
 a:link {
-	color:#414958;
-	text-decoration: underline;
+  color: #414958;
+  text-decoration: underline;
 }
+
 a:visited {
-	color: #4E5869;
-	text-decoration: underline;
+  color: #4E5869;
+  text-decoration: underline;
 }
+
 a:hover, a:active, a:focus {
-	text-decoration: none;
-	text-align: right;
+  text-decoration: none;
+  text-align: right;
 }
 
-#navleft {
-	opacity: 0.90;
+/* end of sidebar */
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  font: 80%/1.0 "Courier New", Courier, monospace
 }
 
-.container {
-	width: 80%;
-	max-width: 1260px;
-	min-width: 780px;
-	background-color: #FFF;
-	margin: 0 auto;
-	overflow: hidden;
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-kerning: 100px;
+  font-variant: small-caps;
+  text-shadow: 5px;
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
 
-.sidebar1 {
-	float: left;
-	width: 20%;
-	background-color: #FFFD00;
-	padding-bottom: 10px;
-}
-.content {
-	padding: 10px 0;
-	width: 80%;
-	float: left;
-	color: inherit;
+section {
+  background-color: rgba(103, 140, 177, 0.5);
+  border-color: #ffffff;
+  border-width: thick;
+  border-radius: 10px;
+  padding: 8px;
 }
 
-.content ul, .content ol {
-	padding: 0 15px 15px 40px;
+.title {
+  text-align: center;
+  align-items: center;
 }
 
-ul.nav {
-	list-style: none;
-	border-top: 10px solid #F33;
-	margin-top: 10px
-	margin-bottom: 10px;
-}
-ul.nav li {
-	border-bottom: 1px solid #666;
-}
-ul.nav a, ul.nav a:visited {
-	padding: 5px 5px 5px 15px;
-	display: block;
-	text-decoration: none;
-	background-color: #8090AB;
-	color: #000;
-}
-ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
-	background-color: #6F7D94;
-	color: #FFF;
+.spacing {
+  padding: 1%;
+  margin: 1%;
 }
 
-.fltrt {
-	float: right;
-	margin-left: 8px;
-}
-.fltlft {
-	float: left;
-	margin-right: 8px;
-}
-.clearfloat {
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
-}
-body footer {
-	text-align: center;
-	color:: #FFF
-	background-color:#000
-; 			color: #FFF;
-	font-size: x-small;
-}
-.container .content p {
-	text-align: justify;
+#top {
+  background-color: rgb(0, 0, 0, 0);
+  border-color: none;
+  border-width: none;
+  border-radius: 0px;
+  padding: 0px;
+  visibility: hidden;
 }
 
-nav > ul > li > a > .caret {
-	border-top: 4px solid #aaa;
-	border-right: 4px solid transparent;
-	border-left: 4px solid transparent;
-	content: "";
-	display: inline-block;
-	height: 0;
-	width: 0;
-	vertical-align: middle;
 
-	-webkit-transition: color 0.1s linear;
-	-moz-transition: color 0.1s linear;
-	-o-transition: color 0.1s linear;
-	  transition: color 0.1s linear;
-}
-li {
-	text-align: left;
-}
-img {
-	align: center;
+#chest {
+  left: 0;
+  text-align:center;
+  top: 30px;
+  width: 100%
+  text-shadow: 5px;
+  text-transform: lowercase;
+  text-decoration: overline;
+  text-decoration-color: green;
+  text-rendering: geometricPrecision;
 }

@@ -1,203 +1,78 @@
 <!DOCTYPE html>
+<html>
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="refresh" content="60">
-<meta name="description" content="DarkChaos Games Official Website">
-<meta name="keywords" content="HTML,CSS">
-<meta name="author" content="Hansel Wei">
-<title>DarkChaos Games</title>
-<head>
-<style type="text/css">
-<!--
-body {
-	font: 100%/1.4 "Copperplate Gothic Light", Arial Narrow, New York, Gill Sans;
-	background-color: #0098FF;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	text-align: justify;
-}
-
-ul, ol, dl {
-	padding: 0;
-	margin: 0;
-}
-
-ul {
-	list-style-image:url(images/bullettheif.png);
-}
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;
-	padding-right: 15px;
-	padding-left: 15px;
-	text-align: center;
-}
-p {
-	font: 80%/1.0 "Courier New", Courier, monospace
-}
-a img {
-	border: none;
-	text-align: center;
-}
-
-
-a:link {
-	color:#414958;
-	text-decoration: underline;
-}
-a:visited {
-	color: #4E5869;
-	text-decoration: underline;
-}
-a:hover, a:active, a:focus {
-	text-decoration: none;
-	text-align: right;
-}
-
-
-.container {
-	width: 80%;
-	max-width: 1260px;
-	min-width: 780px;
-	background-color: #FFF;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-.sidebar1 {
-	float: left;
-	width: 20%;
-	background-color: #FFFD00;
-	padding-bottom: 10px;
-}
-.content {
-	padding: 10px 0;
-	width: 80%;
-	float: left;
-	color: inherit;
-}
-
-.content ul, .content ol { 
-	padding: 0 15px 15px 40px;
-}
-
-ul.nav {
-	list-style: none;
-	border-top: 10px solid #F33;
-	margin-top: 10px
-	margin-bottom: 10px;
-}
-ul.nav li {
-	border-bottom: 1px solid #666;
-}
-ul.nav a, ul.nav a:visited {
-	padding: 5px 5px 5px 15px;
-	display: block;
-	text-decoration: none;
-	background-color: #8090AB;
-	color: #000;
-}
-ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
-	background-color: #6F7D94;
-	color: #FFF;
-}
-
-.fltrt {
-	float: right;
-	margin-left: 8px;
-}
-.fltlft {
-	float: left;
-	margin-right: 8px;
-}
-.clearfloat {
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
-}
-body footer {
-	text-align: center;
-	color:: #FFF
-	background-color:#000
-; 			color: #FFF;
-	font-size: x-small;
-}
-.container .content p {
-	text-align: justify;
-}
-
-nav > ul > li > a > .caret {
-	border-top: 4px solid #aaa;
-	border-right: 4px solid transparent;
-	border-left: 4px solid transparent;
-	content: "";
-	display: inline-block;
-	height: 0;
-	width: 0;
-	vertical-align: middle;
-	
-	-webkit-transition: color 0.1s linear;
-	-moz-transition: color 0.1s linear;
-	-o-transition: color 0.1s linear;
-	  transition: color 0.1s linear; 
-}
-li {
-	text-align: left;
-}
--->
-</style><!--[if lte IE 7]>
-<style>
-.content { margin-right: -1px; } 
-ul.nav a { zoom: 1; }
-</style>
-<![endif]--></head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="60">
+  <meta name="description" content="ChiefDarkChaos Nightly Dev Website">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="Hansel Wei">
+  <title>ChiefDarkChaos Games</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/faq.css">
+</head>
 
 <body>
-<section id:"Top">
-<div class="container">
-  <div class="sidebar1">
+  <section id="top"></section>
+  <div id="sidebar">
     <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#About">About</a></li>
+      <form>
+      Search Site:
+      <input type="search" name="websearch">
+    </form>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#About">About</a></li>
       <li><a href="archive.html">Archive</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="donate.html">Donate</a></li>
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
+    <div id="sidebar-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
-  <div class="content">
-    <h1> <a href="index.html"><img src="images/Chest.png" width="60" height="75" alt="Chest.png"></a> DarkChaos Games </h1>
-    <p>  DarkChaos Games Is an independent video game group founded by 
-three enthusiatic Indie Game Developers known by our gamer tags as Chaos1213g, ChiefBlueScreen, Darkmastermindz. Our passion is to make games and enhance lives of others and making games on a whole new level. In the end, it's all about the community sending in ideas for the most ridiculous and fun game concepts and us creating the best game possible. <a href="index.html#About">[About the Staff]</a>   </p>
-<section id:"Description">
-<section id="featured">
-  <h2>FAQ</h2>
+
+  <section class="content">
+    <div class="title">
+      <ul style="list-style-type:none">
+        <li><a href="#" id="chest"><img src="../images/Chest.png" width="60" height="75" alt="Chest.png"><br>Click Me</a><h2>Days without null pointer exceptions: <span id="increment">0</span></h2></li>
+        <li>
+          <h1>DarkChaos Games</h1></li>
+      </ul>
+    </div>
+
+    <h2>FAQ</h2>
     <ul>
-      <li><strong>How can I submit a game Idea?</strong><br>
-        Click contact us and let one of us know.<br><br>
-        </li>
-      <li><strong>How do I submit my game design article?</strong><br>
-      	Contact us and email the Webmaster. Please provide a pdf and/or an html file of your article.<br><br>
-      	</li>
-      <li><strong>How often do you update your website?</strong><br>
-      	That depends on how many projects are currently running. I would say once every two weeks at the least for every project.<br><br>
-        </li>
+      <li><strong>How can I submit a game or idea?</strong>
+        <p>Click here</p>
+      </li>
+      <li><strong>How do I submit my game design experience?</strong><br> Contact us and email the Webmaster. Please provide a PDF or Word Document of your article.<br><br>
+      </li>
+      <li><strong>How often do you update your website?</strong>
+        <p>That depends on how many projects are currently running. I would say once every two weeks at the least for every project.</p>
+      </li>
       <li><strong>I wish to start a project with the DarkChaos team. Who do I inquire?</strong><br>
-      	Please contact Darkmastermindz on the <a href="contact.html">contact us</a>page.<br><br>
-        </li>
-      <li><strong>I have emailed and have not gotten a response...</strong><br>
-      	First of all, that is a statement. NOT a question. There are a whole lot of messages to check out there. If you have not received a reply within 14 days then please send another one. Otherwise, wait patiently.<br><br>
-        </li>
-</ul>
-</section>
-<section id="About">
-    <p><a href="index.html#Top">[Back to Top]</a></p>
- 	</section>
-    </section>
-  </div>
-  <!-- end .container --></div>
-<footer>© 2014 DarkChaos Games</footer>
+        <br>
+        <p>Please contact Darkmastermindz on the <a id="contact-us" href="contact.html">contact us</a>page.</p>
+        <br>
+      </li>
+      <li><strong>I have emailed and have not gotten a response...</strong><br> First of all, that is a statement. NOT a question. There are a whole lot of messages to check out there. If you have not received a reply within 14 days then please send another
+        one. Otherwise, wait patiently.<br><br>
+      </li>
+    </ul>
+
+  </section>
+<div id="spacing"></div>
+  <section id="About">
+      <p align="right"> <a href="faq.html#top">[Back to Top]</a></p>
+  </section>
+  <footer>© 2017 DarkChaos Games</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="../js/animations.js"></script>
 </body>
 
 </html>
