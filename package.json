@@ -5,9 +5,9 @@
   "engines": {
     "node": "8.9.1"
   },
-  "main": "index.js",
+  "main": "Server.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node Server.js",
     "test": "node test.js"
   },
   "dependencies": {
