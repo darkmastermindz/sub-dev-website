@@ -4,15 +4,15 @@
   "description": "Website to showcase Darkus Rising",
   "engines": {
     "node": "8.9.1"
+    "npm": "3.10.10"
   },
   "main": "Server.js",
   "scripts": {
     "start": "node Server.js",
-    "test": "node test.js"
   },
   "dependencies": {
     "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "express": "latest"
   },
   "devDependencies": {
     "request": "^2.81.0",
